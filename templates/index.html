@@ -1,4 +1,7 @@
 {% extends "layout.html" %}
+{% block title %}Whiskey Driven Development{% endblock %}
 {% block body %}
-<h1>Hello, world!</h1>
+<div class="container rounded-corners">
+  {{ content|safe }}
+</div>
 {% endblock %}

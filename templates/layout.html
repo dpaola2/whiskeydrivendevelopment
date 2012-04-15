@@ -1,8 +1,7 @@
 <!doctype html>
 <head>
-  {% block title %}
-  <title></title>
-  {% endblock %}
+  <title>{% block title %}{% endblock %}</title>
+  <link href="/static/stylesheets/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   {% for message in get_flashed_messages() %}
