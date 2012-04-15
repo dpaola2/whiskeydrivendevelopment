@@ -7,7 +7,7 @@ install:
 	source bin/activate && pip install -r requirements.txt
 
 serve:
-	foreman start -p 5000
+	source bin/activate && foreman start -p 5000
 
 deploy:
 	git push heroku master
